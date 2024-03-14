@@ -16,10 +16,6 @@ const User = sequelize.define('user', {
         type: Sequelize.STRING,
         allowNull: false,
         unique: true
-    },
-    Phone: { // Adding Phone field
-        type: Sequelize.STRING, // Assuming phone numbers are stored as strings
-        allowNull: false
     }
 });
 

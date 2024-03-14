@@ -11,12 +11,10 @@ exports.getAddProduct = (req, res, next) => {
 exports.postAddProduct = (req, res, next) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phone = req.body.phone;
 
     return User.create({
         Name: name,
-        Mail: email,
-        Phone: phone 
+        Mail: email
     }).then((data) => {
         return res.json(data);
     }).catch(err => console.log(err));

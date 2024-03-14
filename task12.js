@@ -7,17 +7,15 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
-		let phone = document.getElementById('phone').value;
 
 		if (name === '' || email === '' || phone === '') {
-			alert('Please enter name, email, and phone number.');
+			alert('Please enter name and email.');
 			return;
 		}
 		
 		let userData = {
 			name: name,
-			email: email,
-			phone: phone
+			email: email
 		};
 
         try {
